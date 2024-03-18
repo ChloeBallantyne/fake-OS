@@ -1,0 +1,13 @@
+html {
+  height: 99%;
+}
+
+body {
+  background-image: url(./assets/cloud-background.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 99%;
+}
+
+/*# sourceMappingURL=style.css.map */
