@@ -120,3 +120,22 @@ body {
     cursor: pointer;
   }
 }
+
+.song {
+  text-decoration: none;
+  color: black;
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__selected {
+    color: green;
+  }
+  &__list {
+    list-style: none;
+  }
+}
+
+#list {
+  list-style: none;
+}

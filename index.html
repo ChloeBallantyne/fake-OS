@@ -119,7 +119,42 @@
     <div id="modalOne" class="modal">
       <div class="modal__content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <h3>Music Player</h3>
+        <ul class="song__list">
+          <li>
+            Audio Files
+            <ul id="list">
+              <li>
+                <a
+                  class="song"
+                  href="#"
+                  data-value="./assets/music/goodNight.mp3"
+                  >Good Night - FASSounds</a
+                >
+              </li>
+              <li>
+                <a
+                  class="song"
+                  href="#"
+                  data-value="./assets/music/lofiStudy.mp3"
+                  >Lofi Study - FASSounds</a
+                >
+              </li>
+              <li>
+                <a
+                  class="song"
+                  href="#"
+                  data-value="./assets/music/spiritBlossom.mp3"
+                  >Spirit Blossom - RomanBelov</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <audio id="audio" controls="controls">
+          <source id="audioSource" src="" />
+          Your browser does not support the audio format.
+        </audio>
       </div>
     </div>
   </body>
