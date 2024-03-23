@@ -8,14 +8,6 @@
     <title>Fake OS</title>
   </head>
   <body>
-    <img
-      class="homeLogo"
-      src="./assets/home-screen-logo.png"
-      alt="logo"
-      width="450px"
-      height="400px"
-    />
-
     <div id="taskBar">
       <button id="startBtn" class="start">
         <img
@@ -108,6 +100,7 @@
         </li>
       </ul>
     </div>
+
     <div class="icons">
       <button id="modalOneBtn" class="modal__btn">
         <img
@@ -115,7 +108,18 @@
           alt="music player"
         />Music Player
       </button>
+      <button id="modalTwoBtn" class="modal__btn">
+        <img
+          src="./assets/modal-icons/calculator.png"
+          alt="calculator"
+        />Calculator
+      </button>
+      <button id="modalThreeBtn" class="modal__btn">
+        <img src="./assets/modal-icons/display.png" alt="display" />Change
+        Wallpaper
+      </button>
     </div>
+
     <div id="modalOne" class="modal">
       <div class="modal__content">
         <span class="close">&times;</span>
@@ -155,6 +159,60 @@
           <source id="audioSource" src="" />
           Your browser does not support the audio format.
         </audio>
+      </div>
+    </div>
+    <div id="modalTwo" class="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <h3>Simple Calculator</h3>
+        <form>
+          <input type="number" id="inputOne" required /> <br />
+          <input type="number" id="inputTwo" required /> <br />
+          <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          <br />
+          <button>=</button>
+        </form>
+        <div id="resultArea"></div>
+      </div>
+    </div>
+    <div id="modalThree" class="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <h3>Change your wallpaper</h3>
+        <div class="wallpaper__wrapper">
+          <div class="wallpaper">
+            <img
+              src="./assets/wallpaper1.jpeg"
+              alt="cloud wallpaper"
+              width="200px"
+              height="100px"
+            />
+            <button class="wallpaper__btn" id="wallpaper1Btn">Change</button>
+          </div>
+          <div class="wallpaper">
+            <img
+              src="./assets/wallpaper2.png"
+              alt="green wallpaper"
+              width="200px"
+              height="100px"
+            />
+            <button class="wallpaper__btn" id="wallpaper2Btn">Change</button>
+          </div>
+          <div class="wallpaper">
+            <img
+              src="./assets/wallpaper3.jpg"
+              alt="hill wallpaper"
+              width="200px"
+              height="100px"
+            />
+            <button class="wallpaper__btn" id="wallpaper3Btn">Change</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

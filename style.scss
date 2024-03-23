@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url(./assets/cloud-background.jpeg);
+  background-image: url(./assets/wallpaper1.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,12 +18,6 @@ body {
   height: 5%;
   width: 100%;
   border-top: 3px solid white;
-}
-
-.homeLogo {
-  position: fixed;
-  top: 20%;
-  left: 35%;
 }
 
 .menu {
@@ -87,11 +81,8 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
-  top: 0;
+  top: -100px;
   width: 100%;
-  height: 100%;
-  overflow: auto;
   &__content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -138,4 +129,19 @@ body {
 
 #list {
   list-style: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.wallpaper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  &__btn {
+    margin-left: 10px;
+  }
 }
